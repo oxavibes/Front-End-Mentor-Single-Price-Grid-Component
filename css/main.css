@@ -1,0 +1,151 @@
+/*
+
+- Mobile: 375px
+- Desktop: 1440px
+
+*/
+
+
+
+:root {
+    --primary-color-cyan: hsl(179, 62%, 43%);
+    --primary-color-cyan-light: hsl(179, 62%, 48%);
+    --primary-color-bright-yellow: hsl(71, 73%, 54%);
+
+    --neutral-color-light-gray: hsl(204, 43%, 93%);
+    --neutral-grayish-blue: hsl(218, 22%, 67%);
+
+    --font-family: 'Karla', sans-serif;
+    --font-family-size: 1.6rem;
+    --font-family-light: 400;
+    --font-family-bold: 700;
+
+    --box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid orange; */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--neutral-color-light-gray);
+    font-family: var(--font-family);
+    font-size: var(--font-family-size);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.6;
+}
+
+.price-grid {
+    max-width: 65rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.price-grid__header {
+    background-color: #fff;
+    padding: 4rem;
+}
+
+.price-grid__header-title {
+    color: var(--primary-color-cyan);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.price-grid__header-subtitle {
+    font-weight: var(--font-family-bold);
+    color: var(--primary-color-bright-yellow);
+    margin-bottom: 1rem;
+}
+
+.price-grid__header-text {
+    color: var(--neutral-grayish-blue);
+}
+
+.price-grid__bottom {
+    color: #fff;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    border-bottom-right-radius: 6px;
+}
+
+.price-grid__item {
+    padding: 4rem;
+    flex: 0 0 50%;
+    background-color: var(--primary-color-cyan);
+}
+
+.price-grid__item h3 {
+    margin-bottom: 1rem;
+}
+
+.price-grid__sub-price {
+    font-size: 3.2rem;
+}
+
+.price-grid__sub-month {
+    color: var(--neutral-color-light-gray);
+    font-weight: var(--font-family-light);
+    letter-spacing: 1px;
+    vertical-align: middle;
+    font-size: 1.2rem;
+}
+
+.price-grid__sub-text {
+    color: var(--neutral-color-light-gray);
+    margin-bottom: 3rem;
+}
+
+.price-grid__button {
+    background: var(--primary-color-bright-yellow);
+    display: block;
+    padding: 1.2rem 0;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    font-weight: var(--font-family-bold);
+    border-radius: 6px;
+}
+
+
+.price-grid__item:last-child {
+    background: var(--primary-color-cyan-light);
+}
+
+.price-grid__item:last-child h3 {
+    margin-bottom: 2rem;
+}
+
+.price-grid__item-list {
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--neutral-color-light-gray);
+}

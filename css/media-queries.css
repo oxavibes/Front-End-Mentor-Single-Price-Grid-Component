@@ -1,0 +1,25 @@
+@media only screen and (max-width: 40.625em) {
+
+    body {
+        padding: 4rem;
+    }
+
+    .price-grid__bottom {
+        flex-direction: column;
+    }
+
+
+    .price-grid__header,
+    .price-grid__item {
+        padding: 2.8rem 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 27em) {
+    html {
+        /* font-size: 54%; */
+    }
+    .price-grid__header-subtitle {
+        margin-bottom: 2rem;
+    }
+}
