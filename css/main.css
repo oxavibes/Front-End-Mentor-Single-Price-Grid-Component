@@ -125,6 +125,7 @@ h6 {
 
 .price-grid__button {
     background: var(--primary-color-bright-yellow);
+    box-shadow: var(--box-shadow);
     display: block;
     padding: 1.2rem 0;
     text-align: center;
